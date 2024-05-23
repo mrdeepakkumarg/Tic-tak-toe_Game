@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to right top,
+    #68b5e5,
+    #6cb3e6,
+    #72b1e7,
+    #77aee8,
+    #7dace8,
+    #77b2ee,
+    #70b9f3,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.msgcontainer {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+main {
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  background-image: linear-gradient(
+    to right top,
+    #68b5e5,
+    #6cb3e6,
+    #72b1e7,
+    #77aee8,
+    #7dace8,
+    #77b2ee,
+    #70b9f3,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.box {
+  height: 17vmin;
+  width: 17vmin;
+  border-radius: 1rem;
+  font-size: 3rem;
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: #41dfff;
+}
+
+.btn:hover {
+  background-color: #46eefa;
+}
+
+.hide {
+  display: none;
+}
+
+/* ============== Media Query ============= */
+
+@media screen and (max-width: 768px) {
+  .container {
+    height: 60vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    height: 50vh;
+  }
+
+  .container h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    height: 50vh;
+  }
+
+  .container h2 {
+    font-size: 1rem;
+  }
+}
